@@ -32,23 +32,22 @@ A TypeScript-based bot framework integrating AI capabilities with modern develop
    git clone https://github.com/your-username/init-bot-with-gemini.git
    cd init-bot-with-gemini
    ```
-2. Install dependanses:
+2. Install dependencies of the project:
 
    ```
    npm install
    ```
 
-```npm install
+3. Command for the build of the project:
 
-```
+   ```
+   npm build
+   ```
+4. Kickstart the project by launching it on your local server!:
 
-```npm run build
-
-```
-
-```npm run dev
-
-```
+   ```
+   npm dev
+   ```
 
 **Create a .env.local file to store environment variables. Add your Google API key:**
 
