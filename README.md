@@ -1,6 +1,6 @@
-# init-bot-with-gemini
+# Initial Settings for Telegram Bot with Google Gemini AI API
 
-A TypeScript-based bot framework integrating AI capabilities with modern development tools. This project serves as a foundation for building intelligent bots using technologies like [Grammy](https://grammy.dev) and Google's Generative AI API.
+This project provides the initial setup for a TypeScript-based Telegram bot that integrates with Google's Gemini AI API. It combines the power of the [Grammy](https://grammy.dev) framework for building Telegram bots with the capabilities of Google's Generative AI API, enabling you to create intelligent and interactive bots.
 
 ---
 
