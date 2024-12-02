@@ -33,11 +33,17 @@ A TypeScript-based bot framework integrating AI capabilities with modern develop
    cd init-bot-with-gemini
    ```
 
-## npm install
+```npm install
 
-## npm run build
+```
 
-## npm run dev
+```npm run build
+
+```
+
+```npm run dev
+
+```
 
 **Create a .env.local file to store environment variables. Add your Google API key:**
 
