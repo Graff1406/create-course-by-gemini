@@ -26,6 +26,16 @@
     "@types/express": "^5.0.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "grammy": "^1.32.0"
+    "grammy": "^1.32.0",
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@modules": "./src/modules",
+    "@models": "./src/models",
+    "@controllers": "./src/controllers",
+    "@providers": "./src/providers",
+    "@utils": "./src/utils",
+    "@config": "./src/config"
   }
 }

@@ -1,1 +1,1 @@
-import '../controllers/message';
+import '@controllers/message';

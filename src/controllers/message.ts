@@ -1,2 +1,10 @@
 import bot from '../config/bot';
-bot.on('message', (ctx) => ctx.reply('Hi there!'));
+import { generateText } from '../providers/generates';
+bot.on('message', async (ctx) => {
+  const message = ctx.message.text || '';
+  const result = await generateText(message);
+
+  ctx.reply(result.text, {
+    parse_mode: 'Markdown',
+  });
+});

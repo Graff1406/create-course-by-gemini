@@ -1,14 +1,16 @@
+import 'module-alias/register';
 import './config/env';
-import './modules';
+import '@modules';
 import express from 'express';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (_req, res) => {
-  res.send('Server app bot for Gemini is running!');
+  res.send('Telegram bot with Gemini AI is already running!');
 });
 
 app.listen(port, () => {
-  console.log(`Server listening on port: http://localhost:${port}`);
+  console.log(`Server listening on  ➜  Local: http://localhost:${port}/
+    `);
 });

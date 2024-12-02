@@ -8,5 +8,34 @@ export type Model =
   | 'gemini-1.5-pro'
   | 'text-embedding-004';
 
-export const getGemAIModel = (model: Model = 'gemini-1.5-flash') =>
-  genAI.getGenerativeModel({ model });
+export const getGemAIModel = (
+  model: Model = 'gemini-1.5-flash',
+  options?: ModelOptions,
+) => genAI.getGenerativeModel({ model, generationConfig: options });
+
+type ValidNumber =
+  | 0.1
+  | 0.2
+  | 0.3
+  | 0.4
+  | 0.5
+  | 0.6
+  | 0.7
+  | 0.8
+  | 0.9
+  | 1.0
+  | 1.1
+  | 1.2
+  | 1.3
+  | 1.4
+  | 1.5
+  | 1.6
+  | 1.7
+  | 1.8
+  | 1.9
+  | 2.0;
+
+type ModelOptions = {
+  maxOutputTokens: number;
+  temperature: ValidNumber;
+};
