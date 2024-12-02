@@ -36,6 +36,7 @@
     "@controllers": "./src/controllers",
     "@providers": "./src/providers",
     "@utils": "./src/utils",
-    "@config": "./src/config"
+    "@config": "./src/config",
+    "@services": "./src/services"
   }
 }

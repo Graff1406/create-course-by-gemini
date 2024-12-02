@@ -1,8 +1,8 @@
-import { getGemAIModel } from '../../config/genAI';
+import { getGemAIModel } from '@providers/genAI';
 
 const model = getGemAIModel();
 
-export default async (prompt: string): Promise<Result> => {
+export const generateText = async (prompt: string): Promise<Result> => {
   try {
     const result = await model.generateContent(prompt);
     return {

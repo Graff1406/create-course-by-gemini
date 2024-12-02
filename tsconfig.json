@@ -1,5 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Указывает корневую директорию
+    "paths": {
+      "@providers/*": ["src/providers/*"],
+      "@config/*": ["src/config/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@utils/*": ["src/utils/*"],
+      "@models/*": ["src/models/*"],
+      "@modules/*": ["src/modules/*"],
+      "@services/*": ["src/services/*"]
+    },
     "target": "es2020", // Or a suitable target for your environment
     "module": "commonjs", // Or 'esnext' if using import/export syntax
     "outDir": "./dist", // Output directory for compiled JavaScript

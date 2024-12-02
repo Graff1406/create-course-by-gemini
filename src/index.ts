@@ -1,5 +1,5 @@
 import 'module-alias/register';
-import './config/env';
+import './config/dotenv';
 import '@modules';
 import express from 'express';
 
