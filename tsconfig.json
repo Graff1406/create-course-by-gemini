@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2020",  // Or a suitable target for your environment
+    "target": "es2020", // Or a suitable target for your environment
     "module": "commonjs", // Or 'esnext' if using import/export syntax
-    "outDir": "./dist",  // Output directory for compiled JavaScript
-    "strict": true,      // Enable stricter type checking (recommended)
+    "outDir": "./dist", // Output directory for compiled JavaScript
+    "strict": true, // Enable stricter type checking (recommended)
     "esModuleInterop": true, // Enables interoperability with CommonJS modules
-    "skipLibCheck": true    // Skip type checking of declaration files
+    "skipLibCheck": true // Skip type checking of declaration files
   },
   "include": ["./src/**/*"] // Include source files in the 'src' directory
 }
-
