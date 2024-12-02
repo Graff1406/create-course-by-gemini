@@ -48,29 +48,29 @@ A TypeScript-based bot framework integrating AI capabilities with modern develop
 **The project is organized into various directories for better modularization and scalability:**
 
 `src/
-├── config/            # Environment and configuration files
-├── controllers/       # Handlers for bot commands and messages
-├── models/            # TypeScript models and schemas
-├── modules/           # Modularized features and utilities
-├── providers/         # Services and API integrations
-├── services/          # Business logic and AI integrations
-│   ├── generates/     # Text generation logic (e.g.,`generateText.ts`)
-├── utils/             # Helper functions and shared utilities
-├── index.ts           # Application entry point
-`
+
+- ├── config/ # Environment and configuration files
+- ├── controllers/ # Handlers for bot commands and messages
+- ├── models/ # TypeScript models and schemas
+- ├── modules/ # Modularized features and utilities
+- ├── providers/ # Services and API integrations
+- ├── services/ # Business logic and AI integrations
+- │ ├── generates/ # Text generation logic (e.g.,`generateText.ts`)
+- ├── utils/ # Helper functions and shared utilities
+- ├── index.ts # Application entry point
+  `
 
 ## Path Aliases
 
 **To simplify imports, the following path aliases are configured in tsconfig.json and \_moduleAliases:**
-
 `
-@config → src/config
-@controllers → src/controllers
-@models → src/models
-@modules → src/modules
-@providers → src/providers
-@services → src/services
-@utils → src/utils
 
-import { generateText } from "@services/generates/generateText";
-`
+- @config → src/config
+- @controllers → src/controllers
+- @models → src/models
+- @modules → src/modules
+- @providers → src/providers
+- @services → src/services
+- @utils → src/utils
+- `import { generateText } from "@services/generates/generateText";`
+  `
