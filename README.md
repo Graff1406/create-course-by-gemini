@@ -32,6 +32,11 @@ A TypeScript-based bot framework integrating AI capabilities with modern develop
    git clone https://github.com/your-username/init-bot-with-gemini.git
    cd init-bot-with-gemini
    ```
+2. Install dependanses:
+
+   ```
+   npm install
+   ```
 
 ```npm install
 
