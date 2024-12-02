@@ -51,10 +51,8 @@ A TypeScript-based bot framework integrating AI capabilities with modern develop
 
 **Create a .env.local file to store environment variables. Add your Google API key and Telegram Bot token:**
 
-`
-- GOOGLE_API_KEY=your-google-api-key
-- GOOGLE_API_KEY=your-telegram-bot-token
-`
+`- GOOGLE_API_KEY=your-google-api-key
+- GOOGLE_API_KEY=your-telegram-bot-token`
 
 
 ## Project Structure
