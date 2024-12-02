@@ -2,11 +2,11 @@
   "name": "init-bot-with-gemini",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node -r tsconfig-paths/register src/index.ts",
-    "dev": "nodemon --watch src --ext ts,tsx --exec \"ts-node src/index.ts\""
+    "start": "ts-node -r tsconfig-paths/register src/server.ts",
+    "dev": "nodemon --watch src --ext ts,tsx --exec \"ts-node src/server.ts\""
   },
   "keywords": [],
   "author": "",
