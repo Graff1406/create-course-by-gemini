@@ -1,22 +1,18 @@
-import express from 'express';
-import router from './routers';
-import path from 'path';
-
 import 'module-alias/register';
 import './config/dotenv';
 import '@modules';
+import express from 'express';
+import path from 'path';
+import router from './routers';
 
-const server = express();
+const app = express();
 const port = process.env.PORT || 3000;
 
-server.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', router);
 
-// Register the router
-server.use('/', router);
-
-server
+app
   .listen(port, () => {
-    console.log(`Server listening on  ➜  Local: http://localhost:${port}/
-    `);
+    console.log(`Server listening on ➜ Local: http://localhost:${port}/`);
   })
-  .on('error', (e) => console.error(e));
+  .on('error', (e) => console.error('httpServer: ', e));
